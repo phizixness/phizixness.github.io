@@ -1158,7 +1158,9 @@ background-color: rgba(0, 0, 0, 0.267); /* Transparent background initially */
   #worldNav {
     background-color: #000000;
     padding: 15px 15px 30px 15px;
-    
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    background-color: rgba(0, 0, 0, 0.486); /* Transparent background initially */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
 } }
 
 .dropdown-menu {
