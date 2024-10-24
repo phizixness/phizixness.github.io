@@ -74,5 +74,3 @@ git push origin feature-name
 For questions or feedback, please reach out at:
 Email: istiakahmederik@gmail.com
 
-This README will provide visitors and collaborators with a clear overview of your project, helping them get started quickly.
-
