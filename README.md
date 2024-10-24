@@ -72,7 +72,7 @@ git push origin feature-name
 <h1>Contact</h1>
 
 For questions or feedback, please reach out at:
-Email: [Your Email]
+Email: istiakahmederik@gmail.com
 
 This README will provide visitors and collaborators with a clear overview of your project, helping them get started quickly.
 
