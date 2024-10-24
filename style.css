@@ -1134,7 +1134,8 @@ background-color: rgba(0, 0, 0, 0.267); /* Transparent background initially */
   -webkit-backdrop-filter: blur(10px); /* For Safari */ }
     .header-area.sticky .navbar {
 
-      border-color: rgba(0, 0, 0, 0); /* Transparent background initially */ }
+      border-color: rgba(0, 0, 0, 0); /* Transparent background initially */ 
+    background-color: #000000; }
 
 
       /* .header-area.sticky {
