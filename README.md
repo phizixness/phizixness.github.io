@@ -1,4 +1,4 @@
-<h3>Site URL: 🌐 https://phizixness.github.io </h3>
+<h1>Site URL: 🌐 https://phizixness.github.io </h1>
 
 
 
@@ -14,13 +14,13 @@ Phizixness is a knowledge portal focusing on science and physics concepts. The p
 
 
 
-<h1>Feature s</h1>
+<h1>Features</h1>
 
-Weekly articles on physics and scientific theories
+<li>Weekly articles on physics and scientific theories</li>
 
-User-friendly interface and structured content
+<li>User-friendly interface and structured content</li>
 
-Minimal SEO implementation for main page visibility
+<li>Minimal SEO implementation for main page visibility</li>
 
 
 
