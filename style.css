@@ -1158,9 +1158,7 @@ background-color: rgba(0, 0, 0, 0.267); /* Transparent background initially */
   #worldNav {
     background-color: #000000;
     padding: 15px 15px 30px 15px;
-    backdrop-filter: blur(10px); /* Apply blur effect */
-    background-color: rgba(0, 0, 0, 0.486); /* Transparent background initially */
-    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    
 } }
 
 .dropdown-menu {
@@ -1170,9 +1168,9 @@ background-color: rgba(0, 0, 0, 0.267); /* Transparent background initially */
   
   padding-top: 5px;
   border-radius: 3px;
-/*  backdrop-filter: blur(10px); */ /* Apply blur effect */
-  background-color: #0000ff; /* Transparent background initially */
-/*  -webkit-backdrop-filter: blur(10px); */ /* For Safari */ }
+backdrop-filter: blur(10px); /* Apply blur effect */
+  background-color: #000000; /* Transparent background initially */
+ -webkit-backdrop-filter: blur(10px);  /* For Safari */ }
 
 
 
