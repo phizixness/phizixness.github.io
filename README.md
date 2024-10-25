@@ -44,29 +44,7 @@ Phizixness is a knowledge portal focusing on science and physics concepts. The p
 
 <h1>Contributing</h1>
 
-Contributions are welcome! If you want to suggest changes or report issues:
-
-1. Fork the repository.
-
-
-2. Create a new branch:
-
-git checkout -b feature-name
-
-
-3. Commit your changes:
-
-git commit -m "Add feature description"
-
-
-4. Push to your branch:
-
-git push origin feature-name
-
-
-5. Create a pull request.
-
-
+Contributions are welcome anytime! 
 
 
 <h1>Contact</h1>
