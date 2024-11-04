@@ -73,7 +73,15 @@ a {
     color: #ffd900; }
 
  
+.eq {
+text-align: center;
+	margin-top: -20px;
+	margin-bottom: 20px;
+	font-family: "Times New Roman", Times, serif;
 
+
+
+}
 
       .contributiontitle {
         font-weight: bolder;
