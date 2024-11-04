@@ -1,22 +1,10 @@
-
-
-
-
-/* [ -- Master Stylesheet -- ]
-
-------------------------------------------------------
-:: Template Name: World - Blog &amp; Magazine Template
-:: Author: Colorlib
-:: Author URL: https://colorlib.com 
-:: Version: 1.0.0
-:: Created: March 21, 2018
-:: Last Updated: March 21, 2018
+/*
+-------------------------------------
+:: Istiak Erik
 -------------------------------------------------- */
-/* Variables */
-/* mixin */
-/* :: Import Fonts */
+
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700|Work+Sans:300,400,500,600,700");
-/* :: Import All CSS */
+
 @import url(css/bootstrap.min.css);
 @import url(css/animate.css);
 @import url(css/owl.carousel.css);
