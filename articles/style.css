@@ -792,7 +792,7 @@ text-align: center;
     border: 3px;
     border-style: solid;
     border-color: transparent;
-    border-top-color: #ffd900;
+    border-top-color: #eeff00;
     -webkit-animation: world 2700ms linear infinite;
     animation: world 2700ms linear infinite; }
   #world-load:after {
@@ -806,7 +806,7 @@ text-align: center;
     border: 3px;
     border-style: solid;
     border-color: transparent;
-    border-top-color: #cfb108;
+    border-top-color: #eeff00;
     -webkit-animation: world 1800ms linear infinite;
     animation: world 1800ms linear infinite; }
 
