@@ -52,10 +52,10 @@ a {
   transition-duration: 500ms;
   text-decoration: none;
   outline: none;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   font-family: "Ubuntu", sans-serif;
-  color: #ffffc5; }
+  color: #B2BEB5; }
   a:hover, a:focus {
     font-family: "Ubuntu", sans-serif;
     -webkit-transition-duration: 500ms;
