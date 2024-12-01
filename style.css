@@ -15,7 +15,7 @@
   padding: 0; }
 
 body {
-  font-family: "Work Sans", sans-serif; }
+  font-family: "Playfair Display", sans-serif; }
 
 .ubuntu-fonts {
   font-family: "Ubuntu", sans-serif; }
@@ -32,7 +32,7 @@ h6, hl {
 
 h5,
 a,
-p { font-family: "Montserrat"; }
+p { font-family: "Playfair Display"; }
 
 .hl {
 text-color: #ffffc5;
