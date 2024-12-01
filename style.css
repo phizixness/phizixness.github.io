@@ -59,10 +59,10 @@ a {
   outline: none;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Oswald", sans-serif;
   color: #B2BEB5; }
   a:hover, a:focus {
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Oswald", sans-serif;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
     text-decoration: none;
