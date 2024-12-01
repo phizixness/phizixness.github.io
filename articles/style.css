@@ -3,7 +3,7 @@
 :: Istiak Erik
 -------------------------------------------------- */
 
-@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700|Work+Sans:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Poppins:wght@400;700&display=swap");
 
 @import url(css/bootstrap.min.css);
 @import url(css/animate.css);
@@ -17,10 +17,10 @@
   padding: 0; }
 
 body {
-  font-family: "Work Sans", sans-serif; }
+  font-family: "Oswald", sans-serif;  }
 
 .ubuntu-fonts {
-  font-family: "Ubuntu", sans-serif; }
+  font-family: "Oswald", sans-serif;  }
 
 h1,
 h2,
@@ -48,11 +48,11 @@ a {
   outline: none;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Ubuntu", sans-serif;
-  color: #B2BEB5; }
+  font-family: "Oswald", sans-serif; 
+	color: #B2BEB5; }
   a:hover, a:focus {
-    font-family: "Ubuntu", sans-serif;
-    -webkit-transition-duration: 500ms;
+  font-family: "Oswald", sans-serif; 
+	  q-webkit-transition-duration: 500ms;
     transition-duration: 500ms;
     text-decoration: none;
     outline: none;
