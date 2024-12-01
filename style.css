@@ -33,7 +33,8 @@ h6, hl {
 
 h5,
 a,
-p { font-family: "Poppins", sans-serif; }
+p { font-family: "Poppins", sans-serif;
+    font-weight: 700; }
 
 
 
