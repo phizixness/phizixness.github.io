@@ -30,6 +30,10 @@ h6, hl {
   font-weight: 500;
   line-height: 1.3; }
 
+h5,
+a,
+p { font-family: "Montserrat", sans-serif; }
+
 .hl {
 text-color: #ffffc5;
 
@@ -54,7 +58,7 @@ a {
   outline: none;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #B2BEB5; }
   a:hover, a:focus {
     font-family: "Ubuntu", sans-serif;
