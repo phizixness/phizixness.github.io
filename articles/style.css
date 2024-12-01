@@ -30,7 +30,8 @@ h5,
 h6 {
   color: #ffffff;
   font-weight: 500;
-  line-height: 1.3; }
+  line-height: 1.3;
+  font-family: "Oswald", sans-serif; }
 
   h5:hover {
 text-decoration: underline;}
