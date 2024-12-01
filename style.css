@@ -38,6 +38,17 @@ h6 { font-family: "Oswald", sans-serif;
 }
 
 
+ul {
+  font-family: 'Oswald', sans-serif;
+}
+
+ol {
+  font-family: 'Oswald', sans-serif;
+}
+
+li {
+  font-family: 'Oswald', sans-serif;
+}
 
 
   h5:hover {
