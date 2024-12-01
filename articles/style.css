@@ -1449,7 +1449,7 @@ background-color: rgba(0, 0, 0, 0.267); /* Transparent background initially */
     color: #ffffff;
     margin-bottom: 0;
     margin-right: auto;
-    font-family: "Ubuntu", sans-serif;
+  font-family: "Oswald", sans-serif; 
     font-weight: 700;
     padding: 10px 0;
     border-bottom: 2px solid #000000; }
@@ -1467,7 +1467,7 @@ background-color: rgba(0, 0, 0, 0.267); /* Transparent background initially */
     color: #ffffff;
     margin-bottom: 0;
     margin-right: auto;
-    font-family: "Ubuntu", sans-serif;
+  font-family: "Oswald", sans-serif; 
     font-weight: 700;
     padding: 12px 0;
     border-bottom: 2px solid #000000;
@@ -1568,7 +1568,8 @@ border-radius: 50%;}
     line-height: 1.8;
     margin-bottom: 30px;
     color: #ffffff;
-    font-family: "Ubuntu", sans-serif; }
+  font-family: "Oswald", sans-serif; 
+ }
   .single-blog-content .post-content blockquote {
     border-left: 2px solid;
     border-color: #ffd900;
@@ -1640,7 +1641,7 @@ border-radius: 50%;}
     font-size: 26px;
     color: rgb(201, 201, 201);
     margin-bottom: 0;
-    font-family: "Ubuntu", sans-serif;
+  font-family: "Oswald", sans-serif; 
     font-weight: 700;
     margin-bottom: 30px; }
   .contact-form button.world-btn,
@@ -1679,7 +1680,7 @@ border-radius: 50%;}
 
 .counter-classic-number {
 	color: #f99200;
-	font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Oswald", sans-serif; 
 }
 
 .counter-classic-title {
@@ -1731,7 +1732,7 @@ border-radius: 50%;}
 
 .counter-modern-number {
 	color: #f99200;
-	font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Oswald", sans-serif; 
 }
 
 .counter-modern-title {
@@ -1739,7 +1740,7 @@ border-radius: 50%;}
 	line-height: 1.182;
 	font-weight: 700;
 	letter-spacing: 0;
-	font-family: "Yanone Kaffeesatz", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Oswald", sans-serif; 
 	color: #ffffff;
 }
 
@@ -1784,7 +1785,7 @@ border-radius: 50%;}
 
 	color: #ffffff;
   font-weight: bolder;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Oswald", sans-serif; 
 }
 
 .counter-creative-title {
