@@ -32,7 +32,9 @@ h6, hl {
 }
 
 a,
-p { font-family: "Oswald", sans-serif;
+p,
+h5,
+h6 { font-family: "Oswald", sans-serif;
 }
 
 
