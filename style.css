@@ -1235,7 +1235,7 @@ backdrop-filter: blur(10px); /* Apply blur effect */
       text-align: center;
       line-height: 45px;
       font-size: 24px;
-      font-family: "Ubuntu", sans-serif;
+  font-family: "Oswald", sans-serif; 
       font-weight: 700; }
   .hero-area .hero-post-slide .single-slide .post-title a {
     margin-bottom: 0;
