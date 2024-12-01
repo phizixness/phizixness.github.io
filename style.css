@@ -2,6 +2,7 @@
 
 
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700|Work+Sans:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Poppins:wght@400;700&display=swap");
 
 @import url(css/bootstrap.min.css);
 @import url(css/animate.css);
@@ -15,7 +16,7 @@
   padding: 0; }
 
 body {
-  font-family: "Playfair Display", sans-serif; }
+  font-family: "Oswald", sans-serif; }
 
 .ubuntu-fonts {
   font-family: "Ubuntu", sans-serif; }
@@ -32,12 +33,10 @@ h6, hl {
 
 h5,
 a,
-p { font-family: "Playfair Display"; }
+p { font-family: "Poppins", sans-serif; }
 
-.hl {
-text-color: #ffffc5;
 
-}
+
 
   h5:hover {
 text-decoration: underline;}
