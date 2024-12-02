@@ -1500,7 +1500,8 @@ background-color: rgba(0, 0, 0, 0.267); /* Transparent background initially */
   .page-content h6 {
     color: #ffffff;
     line-height: 1.8;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+font-weight: 300;  }
     .page-content h6:last-of-type {
       margin-bottom: 0; }
 
