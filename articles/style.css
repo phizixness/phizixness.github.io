@@ -123,8 +123,8 @@ text-align: center;
   left: 0;
   width: 100%;
   background-color: rgba (0, 0, 0, 0.39);  /* Dark background */ 
-  backdrop-filter: blur(15px); /* Apply blur effect */
-  -webkit-backdrop-filter: blur(15px); /* For Safari */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
   color: white;  /* Text color */
   text-align: center;
   padding: 10px;
