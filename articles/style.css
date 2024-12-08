@@ -167,7 +167,7 @@ text-align: center;
 
 .ad-slide.active {
   display: block;
-  animation: fadeInOut 6s infinite;
+  animation: fadeInOut 3s infinite;
 }
 
 #ad-info {
