@@ -106,7 +106,71 @@
         </div>
     </header>
     <!-- ***** Header Area End ***** -->
+<!-- Sticky Ad -->
+<div id="sticky-ad">
+    <!-- Carousel -->
+    <div id="carousel-container">
+        <div id="carousel-slides">
+            <div class="carousel-slide">
+                <a href="https://brand1.com" target="_blank">
+                    <img src="ad1.png" alt="Ad 1">
+                </a>
+            </div>
+            <div class="carousel-slide">
+                <a href="https://brand2.com" target="_blank">
+                    <img src="ad2.png" alt="Ad 2">
+                </a>
+            </div>
+            <div class="carousel-slide">
+                <a href="https://brand3.com" target="_blank">
+                    <img src="ad3.png" alt="Ad 3">
+                </a>
+            </div>
+        </div>
+    </div>
 
+    <!-- Ad Content -->
+    <div class="ad-content">
+        <p>Check out the latest deals!</p>
+        <a href="https://example.com" target="_blank">Shop Now</a>
+    </div>
+
+    <!-- Close Button -->
+    <button id="close-sticky-ad">&times;</button>
+
+    <!-- AdChoices Label -->
+    <div id="ad-choices">
+        <a href="https://www.google.com/ads/terms/" target="_blank">AdChoices</a>
+    </div>
+</div>
+
+<!-- Second Banner for 'Ads by Google' -->
+<div id="ads-by-google-banner">
+    <p style="margin: 0; font-size: 14px;">Why are you seeing this ad? <a href="https://www.google.com/ads/terms/" target="_blank" style="color: #007bff;">Ads by Google</a></p>
+</div>
+
+<script>
+    // Carousel Functionality
+    let index = 0;
+    const slides = document.getElementById('carousel-slides');
+    setInterval(() => {
+        index = (index + 1) % 3; // Cycle through 3 ads
+        slides.style.transform = `translateX(-${index * 300}px)`;
+    }, 3000); // Change ad every 3 seconds
+
+    // Close Sticky Ad
+    document.getElementById('close-sticky-ad').addEventListener('click', function() {
+        document.getElementById('sticky-ad').style.display = 'none';
+        document.getElementById('ads-by-google-banner').style.display = 'block'; // Show the second banner
+    });
+
+    // Auto-hide after 10 seconds
+    setTimeout(() => {
+        document.getElementById('sticky-ad').style.display = 'none';
+        document.getElementById('ads-by-google-banner').style.display = 'block'; // Show the second banner
+    }, 10000);
+    </script>
+    
     <!-- ********** Hero Area Start ********** -->
                 <!-- Breadcrumbs-->
                 <section class="breadcrumbs-modern box-transform-wrap bg-image context-dark" style="background-image: url(img/under-header-img/pp/pp-standard.webp);">
