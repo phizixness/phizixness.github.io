@@ -116,8 +116,6 @@ text-align: center;
           padding-right: 0px;
           }} 
 
-
-/* Sticky Ad Container */
 /* Sticky Banner Styling */
 #sticky-banner {
   position: fixed;
@@ -177,7 +175,7 @@ text-align: center;
   10% { opacity: 1; }
   90% { opacity: 1; }
   100% { opacity: 0; }
-}
+	}
 
 
 .valid-tooltip {
