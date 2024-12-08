@@ -118,112 +118,65 @@ text-align: center;
 
 
 /* Sticky Ad Container */
-#sticky-ad {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: #fff;
-    border-top: 2px solid #007bff;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    animation: fadeIn 1s ease-in-out;
+/* Sticky Banner Styling */
+#sticky-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  overflow: hidden;
 }
 
-/* Carousel Styling */
-#carousel-container {
-    width: 300px;
-    height: 100px;
-    overflow: hidden;
-    position: relative;
+.ad-slide {
+  display: none;
+  width: 100%;
+  text-align: center;
 }
 
-#carousel-slides {
-    display: flex;
-    transition: transform 1s;
+.ad-slide.active {
+  display: block;
+  animation: fadeInOut 6s infinite;
 }
 
-.carousel-slide {
-    width: 300px;
-    height: 100px;
+#ad-info {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
 }
 
-.carousel-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    cursor: pointer;
+#ad-info a {
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* Ad Content */
-.ad-content {
-    flex-grow: 1;
-    margin-left: 10px;
+#close-banner {
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+  cursor: pointer;
 }
 
-.ad-content p {
-    margin: 0;
-    font-size: 16px;
-}
-
-.ad-content a {
-    text-decoration: none;
-    color: #007bff;
-    font-size: 14px;
-}
-
-/* Close Button */
-#close-sticky-ad {
-    border: none;
-    background: none;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-/* AdChoices Label */
-#ad-choices {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    font-size: 10px;
-    color: #777;
-}
-
-#ad-choices a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Fade-in Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Second Banner for 'Ads by Google' */
-#ads-by-google-banner {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: #f8f8f8;
-    border-top: 2px solid #ddd;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 9999;
-    padding: 10px;
-    text-align: center;
-    animation: fadeIn 1s ease-in-out;
+/* Fade-In and Fade-Out Animation */
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 
