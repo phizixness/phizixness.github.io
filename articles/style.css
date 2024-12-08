@@ -122,9 +122,8 @@ text-align: center;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #333;  /* Dark background */ 
+  background-color: rgba (0, 0, 0, 0.39);  /* Dark background */ 
   backdrop-filter: blur(15px); /* Apply blur effect */
-  opacity: 0.7;
   -webkit-backdrop-filter: blur(15px); /* For Safari */
   color: white;  /* Text color */
   text-align: center;
