@@ -36,6 +36,16 @@ h6 {
   h5:hover {
 text-decoration: underline;}
 
+.headline h5 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.post-content p, 
+.post-meta span {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 h6 {   font-family: "Oswald", sans-serif; }
 
 p {
