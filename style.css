@@ -1316,7 +1316,7 @@ backdrop-filter: blur(10px); /* Apply blur effect */
   .world-catagory-area .nav-tabs .nav-item .dropdown-menu {
     margin-top: 15px;
     border-radius: 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     border: none; }
 .world-catagory-area .tab-content {
   padding-top: 30px; }
