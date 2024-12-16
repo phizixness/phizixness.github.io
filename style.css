@@ -1324,7 +1324,7 @@ backdrop-filter: blur(10px); /* Apply blur effect */
 .single-blog-post {
   position: relative;
   z-index: 1;
-  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.5);
   border-radius: 10px;
   margin-bottom: 30px; }
   .single-blog-post .post-thumbnail {
