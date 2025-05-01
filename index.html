@@ -676,39 +676,92 @@
 
 
 
-					
-					<div class="aside-widget">
-						<div class="section-title">
-							<h2 class="title">Social Media</h2>
-						</div>
-						<div class="social-widget">
-							<ul>
-								<li>
-									<a href="#" class="social-facebook">
-										<h1 class="post-title">Article Count</h1>
-										<h1 class="counter-creative-number"><span class="counter">12789</span></h1>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="social-twitter">
-										<h1 class="counter-creative-number"><span class="counter">12789</span></h1>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="social-google-plus">
-										<h1 class="counter-creative-number"><span class="counter">12789</span></h1>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
+
 					 
 
 
-
-
-
-
+					<!-- Counter Section Start -->
+					<div class="section-title">
+						<h2 class="title">States</h2>
+					</div>
+<style>
+	.counter-section {
+	  display: flex;
+	  justify-content: space-around;
+	  align-items: center;
+	  gap: 2rem;
+	  background: white;
+	  border-radius: 16px;
+	  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.247);
+	  padding: 40px 20px;
+	  max-width: 800px;
+	  margin: 40px auto;
+	  font-family: 'Segoe UI', sans-serif;
+	}
+	.counter-box {
+	  text-align: center;
+	}
+	.count {
+	  font-size: 3rem;
+	  color: #788b20;
+	  font-weight: bold;
+	}
+	.label {
+	  margin-top: 0.5rem;
+	  font-size: 1.1rem;
+	  color: #555;
+	}
+  </style>
+  
+  <div class="counter-section">
+	<div class="counter-box">
+	  <div class="count" data-target="56">0</div>
+	  <div class="label">Visits</div>
+	</div>
+	<div class="counter-box">
+	  <div class="count" data-target="0">0</div>
+	  <div class="label">Articles</div>
+	</div>
+	<div class="counter-box">
+	  <div class="count" data-target="4">0</div>
+	  <div class="label">Contributors</div>
+	</div>
+  </div>
+  
+  <script>
+	const counters = document.querySelectorAll('.count');
+  
+	function animateCounters() {
+	  counters.forEach(counter => {
+		const updateCount = () => {
+		  const target = +counter.getAttribute('data-target');
+		  const current = +counter.innerText;
+		  const increment = target / 100;
+  
+		  if (current < target) {
+			counter.innerText = Math.ceil(current + increment);
+			setTimeout(updateCount, 15);
+		  } else {
+			counter.innerText = target;
+		  }
+		};
+		updateCount();
+	  });
+	}
+  
+	const observer = new IntersectionObserver((entries, obs) => {
+	  entries.forEach(entry => {
+		if (entry.isIntersecting) {
+		  animateCounters();
+		  obs.disconnect();
+		}
+	  });
+	});
+  
+	observer.observe(document.querySelector('.counter-section'));
+  </script>
+  <!-- Counter Section End -->
+  
 
 				</div>
 			</div>
