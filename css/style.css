@@ -1746,3 +1746,12 @@ textarea.input {
     margin-left: 0px;
   }
 }
+
+
+.usersince {
+  font-size: px;
+  color: #c6cca9;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 0px;
+}
