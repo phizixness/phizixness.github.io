@@ -677,13 +677,13 @@ blockquote.blockquote {
 }
 
 blockquote.blockquote:before {
-  content: "\f10d";
+  content: "\f007";
   font-family: fontAwesome;
   width: 70px;
   height: 70px;
   line-height: 70px;
   text-align: center;
-  border-radius: 20 px;
+  border-radius: 50%;
   color: #d4d36b;
   font-size: 30px;
   background: #fff;
