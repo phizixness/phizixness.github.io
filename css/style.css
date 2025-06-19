@@ -674,7 +674,8 @@ blockquote.blockquote {
   padding: 30px;
   margin: 0px 0px 20px;
   border: 2px solid #e8eaed;
-	border-radius: 10px;
+	border-radius: 30px;
+	background: #e8eaed;
 }
 
 blockquote.blockquote:before {
