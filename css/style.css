@@ -986,13 +986,14 @@ textarea.input {
 .primary-button, .secondary-button {
   display: inline-block;
   padding: 10px 40px;
-  border-radius: 2px;
+  border-radius: 20px;
   border: none;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
+	  color: #fff;
 }
 
 .primary-button {
@@ -1012,6 +1013,7 @@ textarea.input {
 .primary-button:hover, .primary-button:focus {
   background-color: transparent;
   color: #d4d36b;
+	
 }
 
 .secondary-button:hover, .secondary-button:focus {
