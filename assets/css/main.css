@@ -205,6 +205,115 @@ h6 {
   }
 }
 
+
+
+/*----------------------------*\
+	nav aside
+\*----------------------------*/
+
+#nav-aside {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #00000052;
+        backdrop-filter: blur(40px); /* Blur effect */
+      -webkit-backdrop-filter: blur(40px); /* Safari support */
+  max-width: 500px;
+  width: 100%;
+  padding: 80px 20px;
+  overflow-y: scroll;
+  z-index: 99;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: 0.4s all cubic-bezier(.77, 0, .18, 1);
+  transition: 0.4s all cubic-bezier(.77, 0, .18, 1);
+}
+
+#nav-aside.active {
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+.nav-aside-menu li a {
+  display: block;
+  padding: 15px 0px;
+  color: #fff;
+  border-bottom: 1px solid #32333500;
+}
+
+.nav-aside-menu li a:hover, .nav-aside-menu li a:focus {
+  color: #d4d36b;
+}
+
+.nav-aside-menu li.has-dropdown>a {
+  cursor: pointer;
+}
+
+.nav-aside-menu li.has-dropdown>a:after {
+  font-family: 'FontAwesome';
+  content: "\f0d7";
+  float: right;
+}
+
+.nav-aside-menu li.has-dropdown>.dropdown {
+  display: none;
+  margin-left: 30px;
+  border-left: 1px solid #323335;
+}
+
+.nav-aside-menu li.has-dropdown.active>.dropdown {
+  display: block;
+}
+
+.nav-aside-menu li.has-dropdown>.dropdown a {
+  padding: 15px;
+}
+
+.nav-close {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+}
+
+.nav-close span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.nav-close span:before, .nav-close span:after {
+  content: "";
+  display: block;
+  width: 30px;
+  background-color: #fff;
+  height: 2px;
+}
+
+.nav-close span:before {
+  -webkit-transform: translateY(0px) rotate(-135deg);
+  -ms-transform: translateY(0px) rotate(-135deg);
+  transform: translateY(0px) rotate(-135deg);
+}
+
+.nav-close span:after {
+  -webkit-transform: translateY(-2px) rotate(135deg);
+  -ms-transform: translateY(-2px) rotate(135deg);
+  transform: translateY(-2px) rotate(135deg);
+}
+
+
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -228,7 +337,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: #cccbcb;
+    color: #ffffff;
     padding: 18px 15px;
     font-size: 14px;
     font-family: var(--nav-font);
@@ -259,9 +368,9 @@ h6 {
   }
 
   .navmenu .dropdown ul {
-    margin: 0;
-    padding: 10px 0;
-    background: var(--nav-dropdown-background-color);
+    margin: 0;  
+    background: #000000c5;
+  padding: 10px 0;
     display: block;
     position: absolute;
     visibility: hidden;
@@ -269,7 +378,7 @@ h6 {
     top: 130%;
     opacity: 0;
     transition: 0.3s;
-    border-radius: 4px;
+    border-radius: 14px;
     z-index: 99;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
     
@@ -283,7 +392,7 @@ h6 {
     padding: 10px 20px;
     font-size: 15px;
     text-transform: none;
-    color: var(--nav-dropdown-color);
+    color: #ffffff;
   }
 
   .navmenu .dropdown ul a i {
@@ -306,6 +415,7 @@ h6 {
     top: 0;
     left: -90%;
     visibility: hidden;
+    
   }
 
   .navmenu .dropdown .dropdown:hover>ul {
@@ -313,10 +423,32 @@ h6 {
     top: 0;
     left: -100%;
     visibility: visible;
+    
   }
 }
 
 /* Navmenu - Mobile */
+@keyframes fadeSlideFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.navmenu > ul.menu-animate-in {
+  animation: fadeSlideFromTop 0.4s ease forwards;
+}
+
+.navmenu > ul.menu-animate-out {
+  animation: fadeSlideToTop 0.4s ease forwards;
+}
+
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
     color: #ffffff;
@@ -337,10 +469,10 @@ h6 {
     display: none;
     list-style: none;
     position: absolute;
-    inset: 60px 25px 25px 25px;
-    padding: 10px 0;
+    inset: 0px 0px 0px 0px;
+    padding: 50px 50px;
     margin: 0;
-    border-radius: 30px; 
+    border-radius: 0px; 
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -441,9 +573,9 @@ h6 {
     transition: 0.3s;
   }
 
-  .mobile-nav-active .navmenu>ul {
-    display: block;
-  }
+.mobile-nav-active .navmenu > ul {
+  display: block;
+  animation: fadeSlideFromTop 0.3s ease-out;
 }
 
 /*--------------------------------------------------------------
@@ -592,7 +724,7 @@ h6 {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  animation: animate-preloader 0.9s linear infinite;
+  animation: animate-preloader 1s linear infinite;
 }
 
 @keyframes animate-preloader {
@@ -775,7 +907,7 @@ section,
   background: color-mix(in srgb, var(--background-color), transparent 50%);
 }
 
-@media (max-width: 575px) {
+@media (max-width: 375px) {
   .slider .swiper-slide {
     min-height: 300px;
   }
@@ -1415,48 +1547,52 @@ section,
 .blog-details .article {
   background-color: var(--surface-color);
   padding: 30px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0);
 }
 
 .blog-details .post-img {
   margin: -30px -30px 20px -30px;
   overflow: hidden;
+    border-radius: 15px;
 }
 
 .blog-details .title {
   color: var(--heading-color);
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 35px;
+  font-weight: 00;
   padding: 0;
-  margin: 30px 0;
+  margin: 0px 0;
 }
 
 .blog-details .content {
   margin-top: 20px;
+  font-family: "Inter",  sans-serif;
 }
 
 .blog-details .content h3 {
-  font-size: 22px;
+  font-size: 30px;
   margin-top: 30px;
   font-weight: bold;
 }
 
 .blog-details .content blockquote {
   overflow: hidden;
-  background-color: color-mix(in srgb, var(--default-color), transparent 95%);
-  padding: 60px;
+  background-color: #e2e2e2;
+  padding: 10px;
   position: relative;
-  text-align: center;
+  text-align: left;
   margin: 20px 0;
+  border-radius: 8px;
 }
 
 .blog-details .content blockquote p {
-  color: var(--default-color);
+  color: #353535;
   line-height: 1.6;
   margin-bottom: 0;
-  font-style: italic;
+    font-family: "EB Garamond",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: bolder;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .blog-details .content blockquote:after {
@@ -1466,7 +1602,7 @@ section,
   top: 0;
   bottom: 0;
   width: 3px;
-  background-color: var(--accent-color);
+
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -1483,6 +1619,7 @@ section,
   align-items: center;
   padding: 0;
   margin: 0;
+
 }
 
 .blog-details .meta-top ul li+li {
@@ -1493,7 +1630,7 @@ section,
   font-size: 16px;
   margin-right: 8px;
   line-height: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: #000000;
 }
 
 .blog-details .meta-top a {
@@ -1501,6 +1638,7 @@ section,
   font-size: 14px;
   display: inline-block;
   line-height: 1;
+  color: #000000;
 }
 
 .blog-details .meta-bottom {
@@ -1561,8 +1699,12 @@ section,
 /*--------------------------------------------------------------
 # Blog Comments Section
 --------------------------------------------------------------*/
+
+
+
 .blog-comments {
   padding: 10px 0;
+  background-color: #f7f7f7;
 }
 
 .blog-comments .comments-count {
@@ -1580,6 +1722,8 @@ section,
 
 .blog-comments .comment .comment-img img {
   width: 60px;
+    border-radius: 50%;
+
 }
 
 .blog-comments .comment h5 {
@@ -1621,14 +1765,14 @@ section,
 # Comment Form Section
 --------------------------------------------------------------*/
 .comment-form {
-  padding-top: 10px;
+  padding-bottom: 0px;
+   padding-top: 0px;
+
 }
 
 .comment-form form {
-  background-color: var(--surface-color);
-  margin-top: 30px;
-  padding: 30px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  background-color: #f7f7f7; 
+
 }
 
 .comment-form form h4 {
@@ -1637,21 +1781,23 @@ section,
 }
 
 .comment-form form p {
-  font-size: 14px;
+  font-size: 15px;
+  color: #474e05;
+  font-style: italic;
 }
 
 .comment-form form input {
-  background-color: var(--surface-color);
+  background-color: #e9e9e9;
   color: var(--default-color);
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
   font-size: 14px;
-  border-radius: 4px;
+  border-radius: 14px;
   padding: 10px 10px;
 }
 
 .comment-form form input:focus {
   color: var(--default-color);
-  background-color: var(--surface-color);
+  background-color: #c0c0c0;
   box-shadow: none;
   border-color: var(--accent-color);
 }
@@ -1661,20 +1807,20 @@ section,
 }
 
 .comment-form form textarea {
-  background-color: var(--surface-color);
+    background-color: #e9e9e9;;
   color: var(--default-color);
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
-  border-radius: 4px;
+  border-radius: 14px;
   padding: 10px 10px;
   font-size: 14px;
   height: 120px;
 }
 
 .comment-form form textarea:focus {
-  color: var(--default-color);
+  color: #fff;
   box-shadow: none;
   border-color: var(--accent-color);
-  background-color: var(--surface-color);
+  background-color: #ffffff;
 }
 
 .comment-form form textarea::placeholder {
@@ -1686,16 +1832,17 @@ section,
 }
 
 .comment-form form .btn-primary {
-  border-radius: 4px;
+  border-radius: 14px;
   padding: 10px 20px;
   border: 0;
   background-color: var(--accent-color);
   color: var(--contrast-color);
+  width: 100%;
 }
 
 .comment-form form .btn-primary:hover {
   color: var(--contrast-color);
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background-color: color-mix(in srgb, var(--accent-color), transparent 60%);
 }
 
 /*--------------------------------------------------------------
@@ -1709,6 +1856,7 @@ section,
 
 .blog-posts .post-img img {
   transition: 0.5s;
+
 }
 
 .blog-posts .post-date {
@@ -1725,6 +1873,7 @@ section,
 
 .blog-posts .post-content {
   padding: 30px;
+  
 }
 
 .blog-posts .post-title {
@@ -1885,7 +2034,7 @@ section,
   border: 0;
   padding: 10px 30px;
   transition: 0.4s;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
@@ -1910,10 +2059,9 @@ section,
 
 .widget-item {
   margin-bottom: 30px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 98%);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  background-color: #f7f7f7;  /* border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%); */
   padding: 30px;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .widget-item:last-child {
