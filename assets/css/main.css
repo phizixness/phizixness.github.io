@@ -22,7 +22,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #535353; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #465367; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #8f911b; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -143,16 +143,20 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: #f2f2f2;
+  --background-color: #000000;
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 10px 0;
   transition: all 0.5s;
   z-index: 997;
+/*    
+  backdrop-filter: blur(20px);          
+  -webkit-backdrop-filter: blur(20px);   */
 }
 
 .header .logo {
   line-height: 1;
+  
 }
 
 .header .logo img {
@@ -164,7 +168,7 @@ h6 {
   font-size: 30px;
   margin: 0;
   font-weight: 500;
-  color: var(--heading-color);
+  color: #cecdcd;;
 }
 
 .header .header-social-links {
@@ -172,7 +176,7 @@ h6 {
 }
 
 .header .header-social-links a {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: #dadada;
   padding-left: 6px;
   display: inline-block;
   transition: 0.3s;
@@ -224,7 +228,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    color: #cccbcb;
     padding: 18px 15px;
     font-size: 14px;
     font-family: var(--nav-font);
@@ -251,7 +255,7 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: #a3b409;
   }
 
   .navmenu .dropdown ul {
@@ -268,6 +272,7 @@ h6 {
     border-radius: 4px;
     z-index: 99;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    
   }
 
   .navmenu .dropdown ul li {
@@ -314,7 +319,7 @@ h6 {
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);
+    color: #ffffff;
     font-size: 28px;
     line-height: 0;
     margin-right: 10px;
@@ -325,26 +330,29 @@ h6 {
   .navmenu {
     padding: 0;
     z-index: 9997;
+   
   }
 
   .navmenu ul {
     display: none;
     list-style: none;
     position: absolute;
-    inset: 60px 20px 20px 20px;
+    inset: 60px 25px 25px 25px;
     padding: 10px 0;
     margin: 0;
-    border-radius: 6px;
-    background-color: var(--nav-mobile-background-color);
+    border-radius: 30px; 
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 30px rgba(255, 251, 0, 0.301);
+       background: rgba(10, 10, 10, 0.534); 
+  backdrop-filter: blur(10px);          
+  -webkit-backdrop-filter: blur(10px); 
   }
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-dropdown-color);
+    color: #ffffff;
     padding: 10px 20px;
     font-family: var(--nav-font);
     font-size: 17px;
@@ -368,7 +376,7 @@ h6 {
     justify-content: center;
     border-radius: 50%;
     transition: 0.3s;
-    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+    background-color: #474e05;
   }
 
   .navmenu a i:hover,
@@ -380,7 +388,7 @@ h6 {
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-dropdown-hover-color);
+    color: #b6c90c;
   }
 
   .navmenu .active i,
@@ -568,8 +576,10 @@ h6 {
   inset: 0;
   z-index: 999999;
   overflow: hidden;
-  background: var(--background-color);
+  background: #00000023;
   transition: all 0.6s ease-out;
+   backdrop-filter: blur(2px);          
+  -webkit-backdrop-filter: blur(2px);
 }
 
 #preloader:before {
@@ -582,7 +592,7 @@ h6 {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  animation: animate-preloader 1.5s linear infinite;
+  animation: animate-preloader 0.5s linear infinite;
 }
 
 @keyframes animate-preloader {
@@ -605,7 +615,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: #7d8a08;
   width: 40px;
   height: 40px;
   border-radius: 4px;
