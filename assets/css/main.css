@@ -741,7 +741,7 @@ h6 {
   background-color: #7d8a08;
   width: 40px;
   height: 40px;
-  border-radius: 4px;
+  border-radius: 14px;
   transition: all 0.4s;
 }
 
@@ -900,7 +900,7 @@ section,
 
 @media (max-width: 375px) {
   .slider .swiper-slide {
-    min-height: 300px;
+    /* min-height: 300px; */
   }
 }
 
@@ -931,6 +931,7 @@ section,
 
 .trending-category .post-entry img {
   margin-bottom: 30px;
+  
 }
 
 .trending-category .post-entry h2 {
@@ -1325,7 +1326,9 @@ section,
 .lifestyle-category .post-list.lg h2 {
   font-size: 40px;
   line-height: 1;
+  
 }
+
 
 /*--------------------------------------------------------------
 # About Section
