@@ -925,6 +925,10 @@ section,
   color: var(--default-color);
 }
 
+.slider .content p {
+	font-family: "Inter",  sans-serif;
+}
+
 /*--------------------------------------------------------------
 # Trending Category Section
 --------------------------------------------------------------*/
