@@ -641,6 +641,7 @@ h6 {
   list-style: none;
   padding: 0;
   margin: 0;
+	font-family: "Inter",  sans-serif;
 }
 
 .footer .footer-links ul i {
@@ -663,6 +664,7 @@ h6 {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   display: inline-block;
   line-height: 1;
+	font-family: "Inter",  sans-serif;
 }
 
 .footer .footer-links ul a:hover {
@@ -671,6 +673,7 @@ h6 {
 
 .footer .footer-contact p {
   margin-bottom: 5px;
+	font-family: "Inter",  sans-serif;
 }
 
 .footer .copyright {
