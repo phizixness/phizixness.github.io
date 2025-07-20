@@ -84,7 +84,62 @@
   </header>
 
   <main class="main">
+    <!-- Slider Section -->
+    <section id="slider" class="slider section dark-background">
 
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "centeredSlides": true,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              }
+            }
+          </script>
+
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide" style="background-image: url('assets/img/slide1.webp');">
+              <div class="content">
+                <h2><a href="single-post.html">Welcome to the World of Rockets</a></h2>
+                <p>Both the LHC ATLAS detector and the CMS detector det.</p>
+              </div>
+            </div>
+
+            
+
+          
+
+
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Slider Section -->
+
+
+    
     <!-- Page Title -->
     <div class="page-title position-relative">
       <div class="container d-lg-flex justify-content-between align-items-center">
