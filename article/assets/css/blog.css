@@ -2102,7 +2102,9 @@ section,
 }
 
 .blog-author-widget p {
-  font-style: italic;
+ font-size: small;
+ font-style: italic;
+  font-family:"Inter",  sans-serif;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   margin: 10px 0 0 0;
 }
