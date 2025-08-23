@@ -1734,7 +1734,7 @@ section,
 
 .blog-comments .comment h5 a {
   font-weight: bold;
-  color: var(--default-color);
+  color: var(--accent-color);
   transition: 0.3s;
 }
 
