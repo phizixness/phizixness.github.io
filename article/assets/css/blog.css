@@ -1730,25 +1730,28 @@ section,
 .blog-comments .comment h5 {
   font-size: 16px;
   margin-bottom: 2px;
+	font-weight: bold;
 }
 
 .blog-comments .comment h5 a {
   font-weight: bold;
-  color: var(--accent-color);
+color: var(--accent-color);
   transition: 0.3s;
 }
 
 .blog-comments .comment h5 a:hover {
-  color: var(--accent-color);
+  color: var(--default-color);
 }
 
 .blog-comments .comment h5 .reply {
   padding-left: 10px;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+	color: var(--accent-color);
+  
 }
 
 .blog-comments .comment h5 .reply i {
   font-size: 20px;
+	color: var(--accent-color);
 }
 
 .blog-comments .comment time {
