@@ -683,6 +683,7 @@ h6 {
   background-color: var(--accent-color);
   color: var(--contrast-color);
   width: 100%;
+	margin-top: 8px;
 }
 
 .footer .footer-links .btn-primary:hover {
