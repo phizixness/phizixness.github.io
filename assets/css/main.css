@@ -677,8 +677,8 @@ h6 {
 }
 
 .footer .footer-links .btn-primary {
-  border-radius: 14px;
-  padding: 10px 20px;
+  border-radius: 20px;
+  padding: 5px 20px;
   border: 0;
   background-color: var(--accent-color);
   color: var(--contrast-color);
