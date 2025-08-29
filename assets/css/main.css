@@ -676,6 +676,20 @@ h6 {
 	font-family: "Inter",  sans-serif;
 }
 
+.footer .footer-links .btn-primary {
+  border-radius: 14px;
+  padding: 10px 20px;
+  border: 0;
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  width: 100%;
+}
+
+.footer .footer-links .btn-primary:hover {
+  color: var(--contrast-color);
+  background-color: color-mix(in srgb, var(--accent-color), transparent 60%);
+}
+
 .footer .copyright {
   padding: 25px 0;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
