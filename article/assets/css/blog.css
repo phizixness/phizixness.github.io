@@ -160,7 +160,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: #363636;
+  --background-color: #141414;
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 10px 0;
