@@ -57,6 +57,21 @@
   scroll-behavior: smooth;
 }
 
+
+ 
+.eq {
+text-align: center;
+	margin-top: 10px;
+	
+	margin-bottom: 20px;
+	font-family: "Times New Roman", Times, serif;
+
+
+}
+
+
+
+
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
@@ -86,6 +101,8 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
+
+
 
 /* PHP Email Form Messages
 ------------------------------*/
