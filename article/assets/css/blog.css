@@ -1613,6 +1613,10 @@ section,
   font-size: 20px;
 }
 
+.blog-details .content blockquote p blockquote {
+margin-bottom: -7px;
+}
+
 .blog-details .content blockquote:after {
   content: "";
   position: absolute;
