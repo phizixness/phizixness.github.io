@@ -906,6 +906,7 @@ section,
   align-items: flex-end;
   background-repeat: no-repeat;
   background-size: cover;
+	border-radius: 15px;
 }
 
 .slider .swiper-slide::before {
