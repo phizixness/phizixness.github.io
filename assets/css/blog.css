@@ -1538,6 +1538,8 @@ section,
   /* Add your styles here */
 }
 
+
+
 /*--------------------------------------------------------------
 # Blog Details Section
 --------------------------------------------------------------*/
@@ -1557,8 +1559,13 @@ section,
     border-radius: 15px;
 }
 
+figure.pull-right {
+  margin-left: 15px;
+}
+
 .blog-details .title {
-  color: #ffffff;
+
+  /* color: #ffffff; */
   font-size: 35px;
   font-weight: 00;
   padding: 0;

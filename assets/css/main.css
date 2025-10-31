@@ -680,13 +680,19 @@ h6 {
   border-radius: 20px;
   padding: 5px 20px;
   border: 0;
-  background-color: var(--accent-color);
+  background-color: #779605;
   color: var(--contrast-color);
   width: 100%;
 	margin-top: 15px;
+
+            text-align: center;
+            transition: 0.5s;
+            display: block;
+     
 }
 
 .footer .footer-links .btn-primary:hover {
+
   color: var(--contrast-color);
   background-color: color-mix(in srgb, var(--accent-color), transparent 60%);
 }
@@ -883,18 +889,22 @@ section,
 --------------------------------------------------------------*/
 .slider {
   background-color: transparent;
+  border-radius: 10px;
 }
 
 .slider .swiper-pagination .swiper-pagination-bullet {
   background-color: color-mix(in srgb, var(--default-color) 90%, white 15%);
+  border-radius: 10px;
 }
 
 .slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
+  border-radius: 10px;
 }
 
 .slider .swiper-wrapper {
   height: auto !important;
+  border-radius: 10px;
 }
 
 .slider .swiper-slide {
@@ -904,6 +914,7 @@ section,
   align-items: flex-end;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 10px;
 }
 
 .slider .swiper-slide::before {
@@ -913,12 +924,14 @@ section,
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 10px;
   background: color-mix(in srgb, var(--background-color), transparent 50%);
 }
 
 @media (max-width: 375px) {
   .slider .swiper-slide {
     /* min-height: 300px; */
+    border-radius: 10px;
   }
 }
 
@@ -992,17 +1005,21 @@ section,
 @media (max-width: 768px) {
   .trending-category .custom-border {
     border: none !important;
+    
   }
 }
 
 .trending-category .author .photo {
   margin-right: 10px;
+  border-radius: 10px;
+  
 }
 
 .trending-category .author .photo img {
   width: 40px;
   border-radius: 50%;
   margin-bottom: 0;
+  
 }
 
 .trending-category .author .name h3 {
@@ -1138,6 +1155,8 @@ section,
 
 .culture-category .author .photo {
   margin-right: 10px;
+  border-radius: 10px;
+  border-radius: 10px;
 }
 
 .culture-category .author .photo img {
@@ -1245,12 +1264,14 @@ section,
 
 .business-category .author .photo {
   margin-right: 10px;
+  border-radius: 10px;
 }
 
 .business-category .author .photo img {
   width: 40px;
   border-radius: 50%;
   margin-bottom: 0;
+  border-radius: 10px;
 }
 
 .business-category .author .name h3 {
@@ -1302,12 +1323,14 @@ section,
 
 .lifestyle-category .author .photo {
   margin-right: 10px;
+  border-radius: 10px;
 }
 
 .lifestyle-category .author .photo img {
   width: 40px;
   border-radius: 50%;
   margin-bottom: 0;
+  border-radius: 10px;
 }
 
 .lifestyle-category .author .name h3 {
@@ -2268,4 +2291,112 @@ section,
   font-style: italic;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   margin: 10px 0 0 0;
+}
+
+
+.testimonials {
+  background: linear-gradient(135deg, #7a7a7a, #121212);
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-titl {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  background: linear-gradient(to right, #ffffff, #636363);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.testimonial-slider {
+  position: relative;
+  overflow: hidden;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.testimonial-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.testimonial-card {
+  min-width: 100%;
+  box-sizing: border-box;
+  background: rgba(105, 105, 105, 0.404);
+  border: 1px solid rgba(165, 165, 165, 0.438);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: left;
+  margin: 0 0px;
+}
+
+.testimonial-text {
+
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-family: "Inter",  sans-serif;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.author-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 0px solid #84af1f;
+
+}
+
+.author-name {
+  font-weight: 600;
+  color: #e9e9e9;
+  margin-bottom: -4px;
+}
+
+.author-title {
+  font-size: 0.9rem;
+  color: #c9c9c9;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(76, 102, 6, 0);
+  border: none;
+  color: #68812400;
+  font-size: 2rem;
+  padding: 5px 12px;
+  cursor: pointer;
+
+  z-index: 10;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: rgba(71, 107, 14, 0.3);
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #495f16;
 }
