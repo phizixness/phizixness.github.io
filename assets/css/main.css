@@ -680,7 +680,7 @@ h6 {
   border-radius: 20px;
   padding: 5px 20px;
   border: 0;
-  background-color: #779605;
+  background-color: var(--accent-color);
   color: var(--contrast-color);
   width: 100%;
 	margin-top: 15px;
@@ -784,6 +784,40 @@ h6 {
   visibility: visible;
   opacity: 1;
 }
+
+/*--------------------------------------------------------------
+# Scrll Top Button
+--------------------------------------------------------------*/
+.scrll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background-color: #7d8a08;
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  transition: all 0.4s;
+}
+
+.scrll-top i {
+  font-size: 24px;
+  color: var(--contrast-color);
+  line-height: 0;
+}
+
+.scrll-top:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
+}
+
+.scrll-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
@@ -2373,7 +2407,7 @@ section,
   border: none;
   color: #68812400;
   font-size: 2rem;
-  padding: 5px 12px;
+  padding: 115px 70px;
   cursor: pointer;
 
   z-index: 10;
@@ -2399,4 +2433,46 @@ section,
 
 .dot.active {
   background-color: #495f16;
+}
+
+.image-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+/* Image styling */
+.image-block img {
+  flex-shrink: 0;
+  width: 45%;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Text styling */
+.image-block p {
+  flex: 1;
+  line-height: 1.75;
+}
+
+/* Reverse layout when class="image-block right" */
+.image-block.right {
+  flex-direction: row-reverse;
+}
+
+/* On smaller screens, stack vertically */
+@media (max-width: 768px) {
+  .image-block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-block img {
+    width: 100%;
+  }
+
+  .image-block p {
+    text-align: justify;
+  }
 }
