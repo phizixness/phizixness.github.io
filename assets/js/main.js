@@ -78,12 +78,17 @@ const ssAnnouncement = function() {
   /**
    * Preloader
    */
-  const preloader = document.querySelector('#preloader');
+ const preloader = document.querySelector('#preloader');
+
+window.addEventListener('load', () => {
+
   if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove();
-    });
+    preloader.remove();
   }
+
+  ssAnnouncement();
+
+});
 
   /**
    * Scroll top button
