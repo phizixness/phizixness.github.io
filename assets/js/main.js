@@ -45,7 +45,24 @@
     });
 
   });
+/* announcement
+ * ------------------------------------------------------ */
+const ssAnnouncement = function() {
 
+    const modal = document.querySelector('#announcement');
+    const closeBtn = document.querySelector('.close-btn');
+
+    if (!(modal && closeBtn)) return;
+
+    setTimeout(function() {
+        modal.classList.remove('hidden');
+    }, 5000);
+
+    closeBtn.addEventListener('click', function() {
+        modal.classList.add('hidden');
+    });
+
+}; // end ssAnnouncement
   /**
    * Toggle mobile nav dropdowns
    */
